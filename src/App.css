@@ -339,7 +339,7 @@ nav {
 
 .section1_right_title {
   color: #021206;
-  font-size: 350%;
+  font-size: 280.25%;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -417,26 +417,31 @@ nav {
   font-weight: 600;
   line-height: normal;
 }
-.section2_left_text{
+
+.section2_left_text {
   color: #021206;
-font-size: 110%;
-font-style: normal;
-font-weight: 500;
-line-height: 160%; /* 28.8px */
-opacity: 0.7;
+  font-size: 110%;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  /* 28.8px */
+  opacity: 0.7;
 }
-.section2_left_listItem{
+
+.section2_left_listItem {
   display: flex;
   align-items: center;
 }
-.section2_left_listItem_ico{
+
+.section2_left_listItem_ico {
   margin-right: 10px;
   height: 2.5vh;
   width: 2.5vh;
   background-size: cover;
   background-image: url(./images/greenG.svg);
 }
-.section2_left_listItem p{
+
+.section2_left_listItem p {
   color: #021206;
   font-size: 110%;
   font-style: normal;
@@ -445,10 +450,64 @@ opacity: 0.7;
   opacity: 0.7;
   margin: 0;
 }
+
 .section2_right {
   width: 50%;
   height: 100%;
   background-image: url(./images/section2_img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.section3 {
+  height: 100vh;
+  width: 90vw;
+  margin: auto;
+  display: flex;
+}
+
+.section3>div {
+  width: 50%;
+  height: 100%;
+}
+
+.section3_right {
+  display: flex;
+  align-items: center;
+}
+.section3_right_container{
+  width: 70%;
+  padding-left: 50px;
+}
+.section3_right_title {
+  color: #021206;
+  font-size: 281.25%;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 100%;
+}
+
+.section3_right_text {
+  color: #021206;
+  font-size: 120%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  opacity: 0.7;
+}
+
+.section3_right_text>span {
+  opacity: 1 ;
+  color: #021206;
+  font-size: 120%;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+}
+.section3_left{
+  background-image: url(./images/section3.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
