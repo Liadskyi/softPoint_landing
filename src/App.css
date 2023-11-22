@@ -476,10 +476,12 @@ nav {
   display: flex;
   align-items: center;
 }
-.section3_right_container{
+
+.section3_right_container {
   width: 70%;
   padding-left: 50px;
 }
+
 .section3_right_title {
   color: #021206;
   font-size: 281.25%;
@@ -499,16 +501,162 @@ nav {
 }
 
 .section3_right_text>span {
-  opacity: 1 ;
+  opacity: 1;
   color: #021206;
   font-size: 120%;
   font-style: normal;
   font-weight: 600;
   line-height: 160%;
 }
-.section3_left{
+
+.section3_left {
   background-image: url(./images/section3.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+.connector2 {
+  height: 60vh;
+  width: 100vw;
+  background: #e7f4ef;
+  display: flex;
+  align-items: center;
+}
+
+.connector2_right {
+  width: 50%;
+  height: 150%;
+  background-image: url(./images/connector2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  scale: 1.17;
+}
+
+.connector2_left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.connector2_left_cont {
+  width: 70%;
+}
+
+.connector2_left_title {
+  color: #021206;
+  font-size: 280.25%;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.connector2_left_text {
+  color: #021206;
+
+  font-size: 120%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.connector2_btn {
+  display: inline-flex;
+  padding: 15px 33px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 6px;
+  background: #F44545;
+  color: white;
+}
+
+.connector2_cont{
+  height: 90vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.section4 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.section4_title {
+  width: 100%;
+  color: #021206;
+  text-align: center;
+  font-size: 280.25%;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+
+.section4_text {
+  width: 55%;
+  color: #021206;
+  text-align: center;
+  font-size: 120%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #43DDAA;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #43DDAA;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
 }
