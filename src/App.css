@@ -572,7 +572,7 @@ nav {
   color: white;
 }
 
-.connector2_cont{
+.connector2_cont {
   height: 90vh;
   overflow: hidden;
   display: flex;
@@ -581,12 +581,11 @@ nav {
 
 .section4 {
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .section4_title {
@@ -609,7 +608,7 @@ nav {
   font-weight: 400;
   line-height: 170%;
 }
-/* The switch - the box around the slider */
+
 .switch {
   position: relative;
   display: inline-block;
@@ -617,10 +616,10 @@ nav {
   height: 34px;
 }
 
-/* Hide default HTML checkbox */
-.switch input {display:none;}
+.switch input {
+  display: none;
+}
 
-/* The slider */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -647,16 +646,100 @@ nav {
   border-radius: 50%;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #43DDAA;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px #43DDAA;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+}
+
+.section4_trigger_cont {
+  display: flex;
+  align-items: center;
+}
+
+.section4_trigger_cont p {
+  padding: 20px;
+}
+
+.section4_slider {
+  width: 70%;
+  height: 15px;
+  opacity: 0.7;
+  transition-duration: 0.7s;
+  appearance: none;
+  background: linear-gradient(154deg, #85FED6 4.45%, #4EDAAC 83.73%);
+  border-radius: 10px;
+  box-shadow: 1px 5px 30px 0px rgba(83, 215, 171, 0.50);
+}
+
+.section4_slider:hover {
+  opacity: 1;
+}
+
+.section4_slider::-webkit-slider-thumb {
+  appearance: none;
+  background: linear-gradient(154deg, #85FED6 4.45%, #4EDAAC 83.73%);
+  ;
+  border: 3px solid white;
+  border-radius: 100%;
+  height: 27px;
+  width: 27px;
+  box-shadow: 1px 5px 30px rgba(83, 215, 171, 0.50);
+}
+
+.section4_card_cont {
+  display: flex;
+  width: 80vw;
+  height: 60%;
+  justify-content: space-evenly;
+}
+
+.section4_card {
+  height: 90%;
+  width: 23%;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  background: #FFF;
+}
+
+.section4_card_item_ico {
+  margin-right: 10px;
+  height: 2.5vh;
+  width: 2.5vh;
+  background-size: cover;
+  background-image: url(./images/greenG.svg);
+}
+
+.section4_card_title {
+  color: #021206;
+  text-align: center;
+  font-size: 130%;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 170%;
+  opacity: 0.5;
+}
+.section4_card_price{
+  color: #021206;
+text-align: center;
+font-size: 305%;
+font-style: normal;
+font-weight: 600;
+}
+.section4_card_item{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.section4_card_item>div{
+  display: flex;
+  align-items: center;
 }
