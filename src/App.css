@@ -2,6 +2,7 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
+
 .logo_text {
   color: #24DC9F;
   text-shadow: 0px 4px 70px rgba(155, 215, 195, 0.80);
@@ -133,7 +134,8 @@ nav {
   border-radius: 5px;
   transition-duration: 0.3s;
 }
-.submit:hover{
+
+.submit:hover {
   scale: 1.015;
   transform: translateY(-2%);
   box-shadow: 0px 4px 15px -6px rgba(124, 124, 124, 1);
@@ -393,13 +395,15 @@ nav {
   font-style: normal;
   font-weight: 500;
   transition-duration: 0.3s;
-  
+
 }
-.section1_right_btncont :nth-child(1):hover{
+
+.section1_right_btncont :nth-child(1):hover {
   scale: 1.038;
   transform: translateY(-6%);
   box-shadow: 0px 10px 27px 0px rgba(124, 124, 124, 1);
 }
+
 .section1_right_btncont :nth-child(2) {
   padding: 15px 40px 15px 40px;
   color: red;
@@ -532,7 +536,6 @@ nav {
 }
 
 .connector2 {
-  height: 60vh;
   width: 100vw;
   background: #e7f4ef;
   display: flex;
@@ -541,7 +544,7 @@ nav {
 
 .connector2_right {
   width: 50%;
-  height: 150%;
+  height: 150vh;
   background-image: url(./images/connector2.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -585,6 +588,14 @@ nav {
   border-radius: 6px;
   background: #F44545;
   color: white;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.connector2_btn:hover {
+  scale: 1.038;
+  transform: translateY(-6%);
+  box-shadow: 0px 10px 27px 0px rgba(124, 124, 124, 1);
 }
 
 .connector2_cont {
@@ -715,18 +726,25 @@ input:checked+.slider:before {
   width: 80vw;
   height: 60%;
   justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .section4_card {
-  height: 90%;
-  width: 23%;
+
+  width: 27%;
   border-radius: 15px;
   border: 1px solid rgba(0, 0, 0, 0.10);
   background: #FFF;
   transition-duration: 0.7s;
+  opacity: 0.85;
+
 }
 
-.section4_card_list {}
+
+.section4_card:hover {
+  box-shadow: 0px 20px 50px 0px rgba(2, 18, 6, 0.15);
+}
 
 .section4_card_item_ico {
   margin-right: 10px;
@@ -779,18 +797,142 @@ input:checked+.slider:before {
 
 .section4_card_btn {
   padding: 5% 15% 5% 15%;
+  margin: 5%;
   border-radius: 6px;
-border: 2px solid #F44545;
-background: #FFF;
-color: #F44545;
-transition-duration: 0.7s;
-  
+  border: 2px solid #F44545;
+  background: #FFF;
+  color: #F44545;
+  transition-duration: 0.7s;
+
   cursor: pointer;
 }
-.s4_card_act{
+
+.s4_card_act {
   box-shadow: 0px 20px 100px 0px rgba(2, 18, 6, 0.15);
+  scale: 1.01;
+  opacity: 1;
 }
-.s4_card_act label{
+
+.s4_card_act label:hover {
+  scale: 1.038;
+  transform: translateY(-6%);
+  box-shadow: 0px 10px 27px 0px rgba(124, 124, 124, 1);
+}
+
+.s4_card_act label {
   background: #F55454;
   color: white;
+  transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 1300px) {
+  .section4_card_cont {
+    flex-wrap: nowrap;
+    align-items: center;
+
+  }
+  .section4{
+    height: 230vh;
+  }
+  .section4_card {
+    width: 90%;
+    padding: 3% 0 3% 0;
+    margin: 3% 0 3% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .section4_card_list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  .section4_card_btn{
+    padding: 20% 55% 20% 55%;
+    white-space: nowrap;
+    
+  }
+  .section4_card_price{
+    margin: 0
+  }
+  .section4_card_title{
+    margin: 0;
+  }
+  .section4_slider{
+    display: none;
+  }
+  .header{
+    height: 200vh;
+  }
+  .introducing_cont{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .header_left{
+    height: 50%;
+    width: 100%;
+    padding: 0;
+  }
+  .header_right{
+    height: 50%;
+    width: 100%;
+  }
+  .section1{
+    height: 140vh;
+    flex-wrap: wrap;
+  }
+  .section1_right{
+    height: 50%;
+    width: 100%;
+  }
+  .section1_left{
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+  }
+  .section1_left_container{
+    width: 90%;
+    height: 90%;
+    flex-wrap: wrap;
+  }
+  .section1_left_item{
+    width: 45%;
+    height: 45%;
+  }
+  .section1_right{
+    justify-content: center;
+  }
+  .section2{
+    height: 130vw;
+    flex-wrap: wrap;
+  }
+  .section2_left{
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+
+  }
+  .section2_right{
+    height: 50%;
+    width: 100%;
+  }
+  .section3{
+    height: 130vh;
+    flex-wrap: wrap;
+  }
+  .section3>div{
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+  }
+  .connector2{
+    flex-wrap: wrap;
+    height: 130vh;
+  }
+  .connector2>div{
+    height: 50%;
+    width: 100%;
+  }
 }

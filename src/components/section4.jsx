@@ -26,7 +26,7 @@ function Section4() {
                     }
                 }
             },
-                3)
+                1)
         }
         function two() {
             const myInterval2 = setInterval(() => {
@@ -46,7 +46,7 @@ function Section4() {
                         range.value--
                     }
                 }
-            }, 3)
+            }, 1)
         }
         function three() {
             const myInterval3 = setInterval(() => {
@@ -67,7 +67,7 @@ function Section4() {
                         range.value--
                     }
                 }
-            }, 3)
+            }, 1)
         }
         range.addEventListener("change", (e) => {
             if (e.target.value < 333) {
