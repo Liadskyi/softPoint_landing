@@ -46,11 +46,21 @@ header {
 }
 
 nav {
+  width: 90%;
+}
+.menu_cont_big{
   display: flex;
   justify-content: space-between;
   width: 90%;
+  
 }
-
+.menu{
+  display: flex;
+  flex-direction: column;display: none;
+}
+.menu_btn{
+  display: none;
+}
 .buttons {
   display: flex;
   justify-content: flex-end;
@@ -63,8 +73,6 @@ nav {
   cursor: pointer;
   padding: 12px 37px 12px 37px;
 }
-
-.login {}
 
 .sign_up {
   background-color: rgb(244, 66, 66);
@@ -82,7 +90,7 @@ nav {
 
 .header_left {
   width: 50%;
-  height: 100%;
+  height: auto;
   padding-top: 150px;
 }
 
@@ -223,7 +231,7 @@ nav {
 
 .section1_left {
   width: 50%;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -417,13 +425,13 @@ nav {
   display: flex;
   justify-content: center;
   width: 90vw;
-  height: 100vh;
+  height: auto;
   margin: auto;
 }
 
 .section2_left {
   width: 50%;
-  height: 100%;
+  height: auto;
   display: flex;
   align-items: center;
 }
@@ -471,8 +479,8 @@ nav {
 }
 
 .section2_right {
-  width: 50%;
-  height: 100%;
+  width: 60vw;
+  height: 55vw;
   background-image: url(./images/section2_img.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -480,20 +488,23 @@ nav {
 }
 
 .section3 {
-  height: 100vh;
+  height: auto;
   width: 90vw;
   margin: auto;
   display: flex;
+  justify-content: center;
 }
 
-.section3>div {
-  width: 50%;
-  height: 100%;
+.section3_left {
+  width: 60vw;
+  height: 55vw;
 }
 
 .section3_right {
   display: flex;
   align-items: center;
+  height: 50%;
+  width: 50%;
 }
 
 .section3_right_container {
@@ -543,8 +554,8 @@ nav {
 }
 
 .connector2_right {
-  width: 50%;
-  height: 150vh;
+  width: 50vw;
+  height: 50vw;
   background-image: url(./images/connector2.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -554,7 +565,7 @@ nav {
 
 .connector2_left {
   width: 50%;
-  height: 100%;
+  height: auto;
   display: flex;
   justify-content: flex-end;
 }
@@ -599,7 +610,6 @@ nav {
 }
 
 .connector2_cont {
-  height: 90vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -871,7 +881,7 @@ input:checked+.slider:before {
     justify-content: center;
   }
   .header_left{
-    height: 50%;
+    
     width: 100%;
     padding: 0;
   }
@@ -887,8 +897,12 @@ input:checked+.slider:before {
     height: 50%;
     width: 100%;
   }
+  .section1_right_cont{
+    padding: 0;
+    width: 90%;
+  }
   .section1_left{
-    height: 50%;
+    
     width: 100%;
     justify-content: center;
   }
@@ -902,37 +916,114 @@ input:checked+.slider:before {
     height: 45%;
   }
   .section1_right{
+    height: auto;
     justify-content: center;
   }
   .section2{
-    height: 130vw;
     flex-wrap: wrap;
   }
   .section2_left{
-    height: 50%;
     width: 100%;
     justify-content: center;
 
   }
-  .section2_right{
-    height: 50%;
-    width: 100%;
-  }
   .section3{
-    height: 130vh;
     flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column-reverse;
   }
-  .section3>div{
-    height: 50%;
-    width: 100%;
+  .section3_left{
     justify-content: center;
+  }
+  .section3_right{
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  .section3_right_container{
+    width: 100%;
+    padding: 0;
   }
   .connector2{
     flex-wrap: wrap;
-    height: 130vh;
+    
   }
-  .connector2>div{
-    height: 50%;
+  .section4{
+    height: auto
+  }
+  .section4_text{
+    font-size: 95%;
+  }
+  .section4_trigger_cont p{
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 850px){
+  .menu_cont_big{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    display: none;
+    
+  }
+  .menu{
+    transition-duration: 1s;
+    left: -100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    box-shadow: inset 0 0 0 3000px rgba(150, 150, 150, 0.192);
+    box-shadow: 0px 0px 23px 3px rgba(183, 183, 183, 1);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+
+    z-index: 2;
+  }
+  .menu div{
+    width: auto;
+    margin: 5px;
+  }
+  .menu p{
+    width: auto;
+    text-align: center;
+  }
+  .menu_btn{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .connector2{
+    height: auto;
+    flex-direction: column;
+  }
+  .connector2_left{
     width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  header{
+    height: 110vh;
+  }
+  .header_right{
+    height: 38%;
+  }
+  .playStore_appStore_img_container{
+    margin-top: 10px;
+  }
+  .introducing_cont p{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px){
+  .section1_left{
+    height: 100vh;
+  }
+  .section1{
+    height: auto;
+  }
+  .section3{
+    
   }
 }
