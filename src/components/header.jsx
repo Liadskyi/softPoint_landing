@@ -20,7 +20,10 @@ function Header() {
         <>
             <header>
                 <nav>
-                    <div id="menu_btn">btn</div>
+                    
+                    <span id="menu_btn" class="material-symbols-outlined menu_btn">
+                        menu
+                    </span>
                     <label className="menu" id="menu">
                     <p className="logo_text">
                         soft point

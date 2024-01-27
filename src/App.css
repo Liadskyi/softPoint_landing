@@ -2,7 +2,10 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
-
+.menu_btn{
+  display: none;
+  cursor: pointer;
+}
 .logo_text {
   color: #24DC9F;
   text-shadow: 0px 4px 70px rgba(155, 215, 195, 0.80);
@@ -965,6 +968,9 @@ input:checked+.slider:before {
     width: 90%;
     display: none;
     
+  }
+  .menu_btn{
+    display: inline;
   }
   .menu{
     transition-duration: 1s;
